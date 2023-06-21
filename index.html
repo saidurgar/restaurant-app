@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style></style>
+        <link rel="stylesheet" href="restaurant_app.css">
+        <title>Restaurant using CrudCrud</title>
+    </head>
+    <body>
+        
+        <div class="entire-container">
+            <div class="header">
+                <div class="restaurant-name">
+                    <h1>Happy Tummy Restaurant</h1>
+                </div>
+                <div class="input-div">
+                    <div class="inputs">
+                        <label for="price">Choose Price</label>
+                        <input type="number" id="price">
+                    </div>
+                    <div class="inputs">
+                        <label for="dish">Choose Dish</label>
+                        <input type="Text" id="dish">
+                    </div>
+                    <div class="inputs">
+                        <label for="table-number">Choose Table</label>
+                        <select id="table-number" name="cars">
+                            <option value="1">Table 1</option>
+                            <option value="2">Table 2</option>
+                            <option value="3">Table 3</option>
+                          </select>
+                        <!-- <input type="Text" id="table-number"> -->
+                    </div>   
+                </div>
+                <div class="submit-button-div">
+                    <button onclick="submitOrder(event)" class="submit-button">Submit</button>
+                </div>
+            </div>
+
+            <div class="order-lists">
+                <div class="table-1-list-div">
+                    Table 1 Orders
+                    <ul class="table-1-list" id="table-1-list">
+                        
+                    </ul> 
+                </div>
+                <div class="table-2-list-div">
+                    Table 2 Orders
+                    <ul class="table-2-list" id="table-2-list">
+                        
+                    </ul> 
+                </div>
+                <div class="table-3-list-div">
+                    Table 3 Orders
+                    <ul class="table-3-list" id="table-3-list">
+                    
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+     <script src="restaurant_app.js"></script>   
+    </body>
+</html>
+
